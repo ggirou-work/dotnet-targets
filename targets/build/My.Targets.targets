@@ -1,0 +1,5 @@
+<Project>
+    <Target Name="MyTest" AfterTargets="Restore">
+        <Exec Command="echo 123456" />
+    </Target>
+</Project>
