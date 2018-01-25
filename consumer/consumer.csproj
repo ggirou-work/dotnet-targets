@@ -1,7 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <PackageReference Include="My.Targets" Version="1.0.0" />
+    <PackageReference Include="My.Targets" Version="1.0.0" >
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <DotNetCliToolReference Include="My.Targets" Version="1.0.0" />
   </ItemGroup>
 
