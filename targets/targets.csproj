@@ -9,7 +9,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup Label="dotnet pack instructions">
-    <Content Include="build\*.targets">
+    <Content Include="build\*.props;build\*.targets">
       <Pack>true</Pack>
       <PackagePath>build\</PackagePath>
     </Content>

@@ -1,13 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <ItemGroup>
-    <PackageReference Include="My.Targets" Version="1.0.0" >
+    <PackageReference Include="My.Targets" Version="1.0.0">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <DotNetCliToolReference Include="My.Targets" Version="1.0.0" />
   </ItemGroup>
-
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <MyTestProperty>consumer property</MyTestProperty>
   </PropertyGroup>
+  <Target Name="MyTest" AfterTargets="Restore">
+    <Exec Command="echo $(MyTestProperty) from consumer target" />
+  </Target>
 </Project>

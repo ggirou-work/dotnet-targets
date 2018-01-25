@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>
+    <MyTestProperty>targets property</MyTestProperty>
+  </PropertyGroup>
+</Project>

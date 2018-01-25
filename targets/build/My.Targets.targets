@@ -1,5 +1,5 @@
 <Project>
     <Target Name="MyTest" AfterTargets="Restore">
-        <Exec Command="echo 123456" />
+        <Exec Command="echo $(MyTestProperty) from targets" />
     </Target>
 </Project>
